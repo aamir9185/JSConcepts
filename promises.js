@@ -10,7 +10,7 @@ function fetchData() {
         } else {
           reject(new Error('Failed to fetch data.'));
         }
-      }, 5000);  // returning promise after delay 
+      }, 1000);  // returning promise after delay 
     });
   }
   // Consuming the promise
