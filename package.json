@@ -1,0 +1,23 @@
+{
+  "name": "jsconcepts",
+  "version": "1.0.0",
+  "description": "With  thia repo you are seeing all the basic concepts of javascript which is essential for doing Web development",
+  "main": "async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamir9185/JSConcepts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aamir9185/JSConcepts/issues"
+  },
+  "homepage": "https://github.com/aamir9185/JSConcepts#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
