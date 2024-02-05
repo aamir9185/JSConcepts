@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #firstNumber{
+            padding: 20px;
+            margin: 20px;
+            display: block;
+            border-style: none;
+            box-shadow: 2px 2px rgba(25, 25, 112, 0.499);
+        }
+        
+        #secondNumber{
+            padding: 20px;
+            margin: 20px;
+            display: block;
+            border-style: none;
+            box-shadow: 2px 2px rgba(25, 25, 112, 0.451);
+        }
+
+        .btn{
+            padding: 20px;
+            border-radius: 8px;
+            background-color: midnightblue;
+            color: aliceblue;
+            border-style: none;
+            box-shadow: 2px 2px gray;
+        }
+
+        .btn:hover{
+            scale: 0.8;
+            background-color: rgb(25, 45, 112);
+        }
+    </style>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <div class="form">
+        <input type="number" name="firstNumber" id="firstNumber" placeholder="First Number"><br>
+        <input type="number" name="secondNumber" id="secondNumber" placeholder="Second Number"><br>
+        <button class="btn" onclick="populatedDiv()">Calculate Sum</button><br>
+        <div id="finalSum"></div>
+    </div>
+
+    <script>
+        const populatedDiv = () => {
+            const a = parseInt(document.getElementById("firstNumber").value);
+            const b = parseInt(document.getElementById("secondNumber").value);
+
+            let sum = document.getElementById("finalSum");
+            sum.innerHTML = "Sum: " + (a + b);
+        }
+    </script>
+</body>
+</html>
